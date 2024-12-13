@@ -1,6 +1,6 @@
 import "./Weather.css";
 import axios from "axios";
-import { Puff } from "react-loader-spinner";
+// import { Puff } from "react-loader-spinner";
 
 export default function Weather(props) {
   function displayWeather(response){
@@ -62,12 +62,12 @@ export default function Weather(props) {
         </p>
       </footer>
       
-      <Puff
+      {/* <Puff
       color="blue"
       height={100}
       width={100}
       timeout={3000}     
-    />
+    /> */}
     </div>
 
  
