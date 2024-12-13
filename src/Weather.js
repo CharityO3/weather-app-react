@@ -61,13 +61,7 @@ export default function Weather(props) {
           </a>
         </p>
       </footer>
-      
-      {/* <Puff
-      color="blue"
-      height={100}
-      width={100}
-      timeout={3000}     
-    /> */}
+
     </div>
 
  
