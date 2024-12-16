@@ -15,14 +15,7 @@ export default function Weather(props) {
       <form>
         <div className="row">
           <div className="col-9">
-            <input 
-            className="search-input"
-            type="search"
-            placeholder="Enter a city.."
-            required
-            autofocus
-            autocomplete="off"
-            />
+            <input className="search-input" type="search" placeholder="Enter a city.." required autofocus autocomplete="off" width="100%"/>
           </div>
           <div className="col-3">
             <input className="btn btn-primary" type="Submit" value="Search"/>

@@ -4,10 +4,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* .header {
-  border-bottom: 1px solid #f9f7fe;
-  padding-bottom: 30px;
-} */
+.search-input {
+  width: 100%;
+}
 
 
 a {
