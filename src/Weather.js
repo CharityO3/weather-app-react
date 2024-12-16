@@ -11,37 +11,44 @@ export default function Weather(props) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
   return (
-    <div className="weather-info">
-      <form className="header">
-        <input
-          className="search-input"
-          type="search"
-          placeholder="Enter a city.."
-          required
-          autofocus
-          autocomplete="off"
-        />
-        <input className="submit-button" type="Submit" value="Search" />
-      </form>
-      <div className="current-weather">
-        <div>
-          <h1 className="current-city">Poznan</h1>
-          <p className="current-weather-details">
-            <span>Tuesday 12:10</span>, <span>scattered clouds</span> <br />
-            Humidity: <strong>15%</strong>, Wind: <strong>8km/h</strong>
-          </p>
-        </div>
-        <div className="current-temperature-info">
-          <div className="current-temperature-icon">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-              alt=""
+    <div className="Weather">
+      <form>
+        <div className="row">
+          <div className="col-9">
+            <input 
+            className="search-input"
+            type="search"
+            placeholder="Enter a city.."
+            required
+            autofocus
+            autocomplete="off"
             />
           </div>
-          <div className="current-temperature-value">14</div>
-          <div className="current-temperature-unit">°C</div>
+          <div className="col-3">
+            <input className="btn btn-primary" type="Submit" value="Search"/>
+          </div>
+        </div>
+      </form>
+
+      <h1 className="current-city">Poznan</h1>
+      <ul className="current-weather-details">
+        <li>Tuesday 12:10</li> 
+        <li>scattered clouds</li>
+      </ul>
+      <div className="row">
+        <div className="col-6">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="Mostly Cloudy"/>
+          6°C
+        </div>
+        <div className="col-6">
+          <ul>
+            <li>Precipitation: 15%</li>
+            <li>Humidity: 72%</li>
+            <li>Wind: 15 km/h</li>
+          </ul>
         </div>
       </div>
+      
       <footer>
         <p className="code-credit">
           This project was coded by{" "}
@@ -61,12 +68,6 @@ export default function Weather(props) {
           </a>
         </p>
       </footer>
-
     </div>
-
- 
-    
-
-
   );
 }
