@@ -1,7 +1,33 @@
 .Weather {
   border: 1px solid #dadde1;
-  background: #f6f5fa;
-  font-family: "Roboto", sans-serif;
+  font-family: arial, sans-serif;
+  color: rgb(135, 135, 135);
+  padding: 16px;
+  border-radius: 10px;
+  margin: 60px auto;
+}
+
+.Weather h1{
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  font-weight: 100;
+  line-height: 29px;
+}
+
+.Weather ul{
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li{
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.Weather form{
+  margin-top: 20px;
 }
 
 .search-input {
@@ -14,22 +40,35 @@ a {
   text-decoration: none;
 }
 
-footer {
-  border-top: 1px solid #f9f7fe;
-  color: rgba(39, 33, 66, 0.4);
-  text-align: center;
-  padding-top: 15px;
+.Weather img{
+  display: inline-block;
+  margin-right: 10px;
+  width: 64px;
+}
+
+.Weather .temperature{
+  font-weight: bold;
+  color: rgba(33, 33, 33);
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: 400;
+}
+
+.Weather .unit{
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  top: -34px;
+  line-height: 1;
+  margin-left: 5px;
 }
 
 .Weather{
-  border-radius: 16px;
-  padding: 30px;
-  margin: 60px auto;
   background-color: white;
-  max-width: 600px;
   /*box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);*/
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, */
     /* rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-}
+} 
 
 

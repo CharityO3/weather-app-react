@@ -15,10 +15,10 @@ export default function Weather(props) {
       <form>
         <div className="row">
           <div className="col-9">
-            <input className="search-input" type="search" placeholder="Enter a city.." required autofocus autocomplete="off" width="100%"/>
+            <input className="search-input" type="search" placeholder="Enter a city.." required autoFocus="on" autocomplete="off"/>
           </div>
           <div className="col-3">
-            <input className="btn btn-primary" type="Submit" value="Search"/>
+            <input className="btn btn-primary w-100" type="Submit" value="Search"/>
           </div>
         </div>
       </form>
@@ -28,10 +28,14 @@ export default function Weather(props) {
         <li>Tuesday 12:10</li> 
         <li>scattered clouds</li>
       </ul>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
-          <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="Mostly Cloudy"/>
-          6°C
+          <div className="d-flex">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly Cloudy"/>
+            <div>
+              <span className="temperature">6</span><span className="unit">°C</span>
+            </div>
+          </div>
         </div>
         <div className="col-6">
           <ul>
@@ -41,26 +45,6 @@ export default function Weather(props) {
           </ul>
         </div>
       </div>
-      
-      <footer>
-        <p className="code-credit">
-          This project was coded by{" "}
-          <a href="https://github.com/CharityO3" target="_blank">
-            Charity Orhoridiohwo
-          </a>{" "}
-          and is open-sourced on{" "}
-          <a
-            href="https://github.com/CharityO3/My-Live-Weather-App"
-            target="_blank"
-          >
-            GitHub
-          </a>{" "}
-          and hosted on{" "}
-          <a href="https://my-live-weather-app.netlify.app/" target="_blank">
-            Netlify
-          </a>
-        </p>
-      </footer>
     </div>
   );
 }
