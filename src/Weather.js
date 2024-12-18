@@ -9,7 +9,6 @@ export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({ready:false});
   const [city, setCity] = useState(props.defaultCity); //const is same as let
   function displayWeather(response){
-    console.log(response.data.time);
     setWeatherData({
       ready: true,
       date: new Date(response.data.time * 1000),
@@ -17,7 +16,7 @@ export default function Weather(props) {
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
-      iconUrl: response.data.condition.icon_url,
+      icon: response.data.condition.icon,
       city: response.data.city
     });
   }
