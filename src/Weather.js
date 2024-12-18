@@ -1,15 +1,17 @@
 import React, {useState} from "react";
 import "./Weather.css";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 
 // import { Puff } from "react-loader-spinner";
 
 export default function Weather(props) {
   let [weatherData, setWeatherData] = useState({ready:false});
   function displayWeather(response){
+    console.log(response.data.time);
     setWeatherData({
       ready: true,
-      date: "Tuesday 12:10",
+      date: new Date(response.data.time * 1000),
       temperature: response.data.temperature.current,
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
@@ -24,7 +26,7 @@ export default function Weather(props) {
         <form>
           <div className="row">
             <div className="col-9">
-              <input className="search-input" type="search" placeholder="Enter a city.." required autoFocus="on" autocomplete="off"/>
+              <input className="search-input" type="search" placeholder="Enter a city.." required autoFocus="on" autoComplete="off"/>
             </div>
             <div className="col-3">
               <input className="btn btn-primary w-100" type="Submit" value="Search"/>
@@ -34,7 +36,9 @@ export default function Weather(props) {
   
         <h1 className="current-city">{weatherData.city}</h1>
         <ul className="current-weather-details">
-          <li>{weatherData.date}</li> 
+          <li>
+            <FormattedDate date={weatherData.date}/>
+          </li> 
           <li className="text-capitalize">{weatherData.description}</li>
         </ul>
         <div className="row mt-3">
