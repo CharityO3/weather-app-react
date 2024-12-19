@@ -16,13 +16,13 @@ export default function App() {
       </a>{" "}
       and is open-sourced on{" "}
       <a
-        href="https://github.com/CharityO3/My-Live-Weather-App"
+        href="https://github.com/CharityO3/weather-app-react"
         target="_blank" rel="noreferrer"
       >
         GitHub
       </a>{" "}
       and hosted on{" "}
-      <a href="https://my-live-weather-app.netlify.app/" target="_blank" rel="noreferrer">
+      <a href="https://my-weatherapplication-react.netlify.app/" target="_blank" rel="noreferrer">
         Netlify
       </a>
     </p>
