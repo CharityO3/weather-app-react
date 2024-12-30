@@ -63,14 +63,38 @@ a {
 
 @media (max-width: 900px){
   .search-input{
-    max-width: 80%;
+    max-width: 90%;
     border-radius: 6px;
   }
   .submit-input{
-    margin-left: -60px;
-    font-size: 12px;
+    margin-left: -20px;
+    font-size: 10px;
+    font-weight: bold;
   }
   
+  h1.current-city{
+    font-size: 20px;
+  }
+
+  .Weather canvas{
+    width: 32px;
+    margin-right: 3px;
+    margin-top: 2px;
+  }
+
+  .Weather .unit{
+    font-size: 14px;
+    top: -16px;
+  }
+
+  .Weather .temperature{
+    font-size: 35px;
+    line-height: 32px;
+  }
+
+  .Weather li{
+    font-size: 14px;
+  }
 }
 
 

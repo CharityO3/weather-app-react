@@ -13,5 +13,10 @@
 @media (max-width:900px){
   .App{
     max-width: 400px;
+    padding: 30px -10px;
+  }
+
+  .code-credit{
+    font-size: 8px;
   }
 }

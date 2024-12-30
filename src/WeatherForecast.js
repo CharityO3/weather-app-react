@@ -13,7 +13,6 @@ export default function WeatherForecast(props){
   }, [props.city]);
 
   function displayWeatherForecast(response){
-    console.log(response.data);
     setForecast(response.data.daily);
     setLoaded(true);
   }
