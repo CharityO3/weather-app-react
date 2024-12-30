@@ -16,7 +16,17 @@ export default function WeatherForecast(props){
   if (loaded){
     return(
       <div className="WeatherForecast">
-       <WeatherForecastDay data={forecast[1]}/>
+        <div className="row">
+          {forecast.map(function (dailyForecast, index){
+            if (index > 0 && index < 6){
+              return(  
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast}/>
+                </div>
+              );
+            }
+          })}
+        </div>   
       </div>
     )
   }else{
@@ -24,5 +34,7 @@ export default function WeatherForecast(props){
     let apiKey = "b125a59f9afa4ebc141352te1ao60a9c";
     let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
     axios.get(apiUrl).then(displayWeatherForecast);
+
+    return null;
   }
 }
