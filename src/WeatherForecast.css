@@ -1,11 +1,18 @@
 .WeatherForecast{
   text-align: center;
   margin-top: 30px;
+  border-top: 1px solid #f9f7fe;;
+  padding-top: 20px;
 }
 
 .WeatherForecast-temperature-min{
   opacity: 0.6;
   margin-left: 5px;
+  color: #f65282;
+}
+
+.WeatherForecast-temperature-max{
+  color: #f65282;
 }
 
 @media (max-width:900px){

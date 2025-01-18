@@ -8,7 +8,6 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props){
   return(
     <div className="Weather-info">
-      
       <h1 className="current-city">{props.data.city}</h1>
         <ul className="current-weather-details">
           <li>
@@ -29,12 +28,11 @@ export default function WeatherInfo(props){
           </div>
           <div className="col-6">
             <ul>
-              <li>Humidity: {props.data.humidity}%</li>
-              <li>Wind: {Math.round(props.data.wind)} km/h</li>
+              <li>Humidity: <span className="atmosphere-condition">{props.data.humidity}%</span></li>
+              <li>Wind: <span className="atmosphere-condition">{Math.round(props.data.wind)} km/h</span></li>
             </ul>
           </div>
         </div>
-
     </div>
   );
 }

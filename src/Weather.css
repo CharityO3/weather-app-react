@@ -7,11 +7,13 @@
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  */
   margin: 60px auto;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  background-color: #FEFEFE;
+
 }
 
 .Weather h1{
   font-size: 24px;
-  margin: 20px 0 0 0;
+  margin: 30px 0 0 0;
   font-weight: 100;
   line-height: 29px;
 }
@@ -30,8 +32,15 @@
 
 .Weather form{
   margin-top: 20px;
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+
 }
 
+.atmosphere-condition{
+  color: #f65282;
+  opacity: 0.7;
+}
 
 a {
   color: #885df1;
@@ -58,8 +67,25 @@ a {
   font-weight: 400;
   position: relative;
   top: -34px;
-  line-height: 1;}
+  line-height: 1;
+}
 
+.search-input{
+  background-color: #F9F5FF;
+  border: 1px solid grey;
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+.submit-input{
+  background-color: #5a67d8;
+  color: white;
+}
+
+.submit-input:hover{
+  background-color: #5a67d8;
+  color: white;
+}
 
 @media (max-width: 900px){
   .search-input{
